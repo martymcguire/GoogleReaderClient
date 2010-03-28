@@ -1,0 +1,15 @@
+TODOs
+ * Pass in username/pw and convert those to an SID, drop username/pw after.
+   * lazily
+ * RecentItemsFeed should act as an iterator, feeding one item at a time
+   * refactor feed parameters
+   * feed from its internal feeditems list
+   * delete them to save space (use a linkedlist)
+   * when running low, fetch some more. (min. items to maintain)
+   * needs a "lastupdated time" to pass in for 'ot'
+ * FeedItems should ideally provide an icon/image
+   * probably as a URL, since Java's image processing is so painful
+     * let Processing handle it w/ a wrapper.
+ * FeedItems should return the # of likes
+ * FeedItems should allow items to be marked as read
+ * FeedItems should allow items to be starred
