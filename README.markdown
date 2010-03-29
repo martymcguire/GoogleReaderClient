@@ -17,9 +17,14 @@ Processing project's `code/` directory.
 Support Jars
 ------------
 
-GoogleReaderClient requires several support JARs to work.  Buildr will download these automatically to `$HOME/.m2/repository/`.  You'll need to find all JAR 
-files in this directory and include them in your Processing project's `code/`
-directory manually.  Hopefully this can be cleaned up in a future release.
+GoogleReaderClient requires several support JARs to work.  It relies heavily
+upon the [Jackson JSON parser](http://jackson.codehaus.org/) and [Apache
+HTTPClient 3.1](http://hc.apache.org/httpclient-3.x/).
+
+Buildr will download these automatically to `$HOME/.m2/repository/`.  You'll 
+need to find all JAR files in this directory and include them in your 
+Processing project's `code/` directory manually.  Hopefully this can be 
+cleaned up in a future release.
 
 Usage
 -----
