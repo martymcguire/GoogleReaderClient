@@ -7,6 +7,7 @@ public class FeedItem {
   protected String id;
   protected String title;
   protected Map<String, String> summary;
+  protected Map<String, String> content;
   protected Map<String, String> origin;
   protected List<Map<String,String>> alternate;
   protected long published;
@@ -17,6 +18,9 @@ public class FeedItem {
   public void setTitle(String _title) { title = _title; }
   public void setSummary(Map<String,String> _summary) {
     summary = _summary;
+  }
+  public void setContent(Map<String,String> _content) {
+    content = _content;
   }
   public void setOrigin(Map<String,String> _origin) {
     origin = _origin;
@@ -35,6 +39,7 @@ public class FeedItem {
   public String getId() { return id; }
   public String getTitle() { return title; }
   public Map<String, String> getSummary() { return summary; }
+  public Map<String, String> getContent() { return content; }
   public Map<String, String> getOrigin() { return origin; }
   public List<Map<String, String>> getAlternate() { return alternate; }
   public long getPublished() { return published; }
