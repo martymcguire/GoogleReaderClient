@@ -66,6 +66,7 @@ public class GoogleReaderClient {
       respStream = method.getResponseBodyAsStream();
       mapper = getObjectMapper();
       rif = mapper.readValue(respStream, RecentItemsFeed.class);
+      lastFetch = System.currentTimeMillis() / 1000L;
     } catch (Exception e) {
       throw new RuntimeException("Error retrieving feed.", e);
     } finally {
