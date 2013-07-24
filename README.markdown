@@ -1,3 +1,11 @@
+Good News, Everyone!
+====================
+
+It turns out that Google Reader is no more, so this code is only good for
+historical purposes. Thanks to any and all who happened to look at it.
+
+Special thanks to [Matt Mets](https://github.com/cibomahto) for making [this](http://www.youtube.com/watch?v=ptYMKpYMXzs) with it!
+
 GoogleReaderClient - a Google Reader Client in Java for Processing
 ==================================================================
 
